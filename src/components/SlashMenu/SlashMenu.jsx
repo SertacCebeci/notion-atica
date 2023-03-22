@@ -17,8 +17,8 @@ const SlashMenu = () => {
     setQuery(e.target.value.toLowerCase());
   };
   return (
-    <>
-      <div className="flex flex-col items-center justify-center bg-white border border-black p-4">
+    <div className="h-64">
+      <div className="h-64 overflow-y-scroll flex flex-col items-center justify-start bg-white border border-black p-4">
         <input
           className="border border-black outline-none"
           type="text"
@@ -33,7 +33,7 @@ const SlashMenu = () => {
           <div>No result</div>
         )}
       </div>
-    </>
+    </div>
   );
 };
 
