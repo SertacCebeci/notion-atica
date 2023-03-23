@@ -25,6 +25,11 @@ export default Node.create({
           return true;
         }
       },
+      Backspace: ({ editor }) => {
+        if (editor.view.nodeDOM(0).textContent === "") {
+          return true;
+        }
+      },
     };
   },
 

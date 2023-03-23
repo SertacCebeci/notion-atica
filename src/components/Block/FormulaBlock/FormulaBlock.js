@@ -45,7 +45,6 @@ export default Node.create({
         editor.chain().focus().toggleNode("formulaBlock").run();
       },
       //change it to delete when content empty and backspace clicked
-      Backspace: () => true,
     };
   },
 
