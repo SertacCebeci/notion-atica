@@ -17,6 +17,7 @@ import DocumentContext from "@/contexts/DocumentContext";
 
 //custom nodes
 import TitleBlock from "./Block/TitleBlock/TitleBlock";
+import UniqueID from "./Block/UniqueID";
 import ParagraphBlock from "./Block/ParagraphBlock/ParagraphBlock";
 import Heading1Block from "./Block/Heading1Block/Heading1Block";
 import Heading2Block from "./Block/Heading2Block/Heading2Block";
@@ -33,12 +34,13 @@ const PageEditor = () => {
       Dropcursor,
       Gapcursor,
       History,
-      TitleBlock,
       Bold,
       Italic,
       Underline,
       TextStyle,
       Color,
+      TitleBlock,
+      UniqueID,
       ParagraphBlock,
       Heading1Block,
       Heading2Block,

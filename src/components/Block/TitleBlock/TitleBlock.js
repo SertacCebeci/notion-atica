@@ -22,9 +22,6 @@ export default Node.create({
         const { selection } = state;
         const { $from, empty } = selection;
         if ($from.parent.type == this.type) {
-          const titles = editor.view.docView.children.filter((block) => {
-            console.log(block);
-          });
           return true;
         }
       },

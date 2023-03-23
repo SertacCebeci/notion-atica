@@ -10,20 +10,6 @@ export default Node.create({
   draggable: true,
   priority: 1000,
 
-  addAttributes() {
-    return {
-      id: {
-        default: "",
-        parseHTML: (element) => element.getAttribute("block-id"),
-        renderHTML: (attributes) => {
-          return {
-            "block-id": attributes.id,
-          };
-        },
-      },
-    };
-  },
-
   parseHTML() {
     return [
       {
@@ -57,6 +43,10 @@ export default Node.create({
       },
       "Mod-Alt-p": () =>
         this.editor.chain().focus().setNode("paragraphBlock").run(),
+      //just used for testing
+      "Mod-Alt-l": () => {
+        console.log(this.editor.state.doc.content.content);
+      },
     };
   },
 

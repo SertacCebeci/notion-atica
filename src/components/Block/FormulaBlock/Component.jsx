@@ -24,6 +24,11 @@ const Component = (props) => {
     });
   };
 
+  const getAvailableBlocks = () => {
+    return props.editor.state.doc.content.content;
+  };
+
+  getAvailableBlocks();
   const changeFormulaExpression = (expression) => {
     const result = evalFormulaExpression(expression);
     props.updateAttributes({
@@ -48,7 +53,7 @@ const Component = (props) => {
       <div className="w-16/20 flex mr-10 items-center">
         <div contentEditable={false}>
           <Tippy
-            placement="bottom-end"
+            placement="bottom-start"
             interactive={true}
             content={
               <Downbar

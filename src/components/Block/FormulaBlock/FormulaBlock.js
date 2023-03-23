@@ -1,6 +1,5 @@
 import { mergeAttributes, Node } from "@tiptap/core";
 import { ReactNodeViewRenderer } from "@tiptap/react";
-
 import Component from "./Component";
 
 export default Node.create({
@@ -45,6 +44,7 @@ export default Node.create({
       "Mod-Alt-f": ({ editor }) => {
         editor.chain().focus().toggleNode("formulaBlock").run();
       },
+      //change it to delete when content empty and backspace clicked
       Backspace: () => true,
     };
   },
