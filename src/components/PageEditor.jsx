@@ -21,6 +21,7 @@ import ParagraphBlock from "./Block/ParagraphBlock/ParagraphBlock";
 import Heading1Block from "./Block/Heading1Block/Heading1Block";
 import Heading2Block from "./Block/Heading2Block/Heading2Block";
 import Heading3Block from "./Block/Heading3Block/Heading3Block";
+import FormulaBlock from "./Block/FormulaBlock/FormulaBlock";
 import SelectionMenu from "./SelectionMenu";
 
 const PageEditor = () => {
@@ -42,6 +43,7 @@ const PageEditor = () => {
       Heading1Block,
       Heading2Block,
       Heading3Block,
+      FormulaBlock,
     ],
     injectCSS: false,
     content: `

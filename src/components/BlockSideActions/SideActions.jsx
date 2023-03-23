@@ -5,7 +5,7 @@ import PlusSideAction from "./PlusSideAction";
 const SideActions = ({ editor, getPos }) => {
   return (
     <div
-      className="h-6 mx-2 flex items-center justify-center"
+      className="h-6 mr-3 flex items-start justify-center"
       contentEditable={false}
       data-drag-handle
     >

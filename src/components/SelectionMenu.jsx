@@ -4,8 +4,9 @@ import { BubbleMenu } from "@tiptap/react";
 const SelectionMenu = ({ editor }) => {
   const showOnParagraph = () => {
     return (
-      editor.isActive("paragraphBlock") &&
-      editor.state.selection.to !== editor.state.selection.from
+      editor?.isActive("paragraphBlock") &&
+      editor?.state?.selection?.to !== editor?.state?.selection?.from &&
+      !editor?.state?.selection?.node
     );
   };
   return (

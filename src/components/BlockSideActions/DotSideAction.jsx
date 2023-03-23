@@ -1,20 +1,32 @@
-import React from "react";
+/* eslint-disable */
+import React, { forwardRef, useState } from "react";
 import { RxDragHandleDots2 } from "react-icons/rx";
 import DotMenu from "../DotMenu/DotMenu";
-import { Tooltip } from "react-tippy";
+import Tippy from "@tippyjs/react";
+
+const DotIcon = forwardRef((props, ref) => {
+  return (
+    <div
+      ref={ref}
+      className="h-6 w-6 flex items-center justify-center hover:bg-gray-300"
+    >
+      <RxDragHandleDots2 className="h-5 w-5 hover:cursor-pointer  hidden group-hover:block" />
+    </div>
+  );
+});
 
 const DotSideAction = ({ editor, getPos }) => {
   return (
     <div>
-      <Tooltip
+      <Tippy
+        placement="left"
         interactive={true}
-        position="left"
-        html={<DotMenu editor={editor} getPos={getPos} />}
-        unmountHTMLWhenHide={true}
+        content={<DotMenu editor={editor} getPos={getPos} />}
         trigger="click"
+        duration={[10, 10]}
       >
-        <RxDragHandleDots2 className="h-4 w-4 hover:cursor-pointer  hidden group-hover:block hover:bg-gray-300" />
-      </Tooltip>
+        <DotIcon />
+      </Tippy>
     </div>
   );
 };

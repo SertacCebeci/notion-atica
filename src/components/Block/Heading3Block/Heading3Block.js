@@ -22,8 +22,21 @@ export default Node.create({
       Enter: ({ editor }) => {
         const { state } = editor;
         const { selection } = state;
-        const { $from } = selection;
+        const { $from, head } = selection;
         if ($from.parent.type == this.type) {
+          const isEnd = !$from.nodeAfter;
+          if (isEnd) {
+            editor
+              .chain()
+              .insertContentAt(head, {
+                type: "paragraphBlock",
+              })
+              .focus()
+              .run();
+
+            editor.chain().selectParentNode().focus().run();
+            return true;
+          }
           return false;
         }
       },
