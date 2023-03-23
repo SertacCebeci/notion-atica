@@ -12,8 +12,14 @@ export default Node.create({
 
   addAttributes() {
     return {
-      count: {
-        default: 0,
+      id: {
+        default: "",
+        parseHTML: (element) => element.getAttribute("block-id"),
+        renderHTML: (attributes) => {
+          return {
+            "block-id": attributes.id,
+          };
+        },
       },
     };
   },
@@ -31,12 +37,26 @@ export default Node.create({
       Enter: ({ editor }) => {
         const { state } = editor;
         const { selection } = state;
-        const { $from } = selection;
-        console.log(this.type);
+        const { $from, head } = selection;
         if ($from.parent.type == this.type) {
+          const isEnd = !$from.nodeAfter;
+          if (isEnd) {
+            editor
+              .chain()
+              .insertContentAt(head, {
+                type: this.type.name,
+              })
+              .focus()
+              .run();
+
+            editor.chain().selectParentNode().focus().run();
+            return true;
+          }
           return false;
         }
       },
+      "Mod-Alt-p": () =>
+        this.editor.chain().focus().setNode("paragraphBlock").run(),
     };
   },
 

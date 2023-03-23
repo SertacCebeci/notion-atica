@@ -27,6 +27,8 @@ export default Node.create({
           return false;
         }
       },
+      "Mod-Alt-1": () =>
+        this.editor.chain().focus().setNode("heading1Block").run(),
     };
   },
 

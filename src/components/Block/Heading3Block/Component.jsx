@@ -1,19 +1,13 @@
 import { NodeViewContent, NodeViewWrapper } from "@tiptap/react";
 import React from "react";
-import { RxDragHandleDots2 } from "react-icons/rx";
-import { AiOutlinePlus } from "react-icons/ai";
 
-const Component = () => {
+import SideActions from "@/components/BlockSideActions/SideActions";
+
+const Component = ({ editor, getPos }) => {
   return (
     <NodeViewWrapper className="w-full h-full flex items-center justify-end group my-2">
-      <div
-        className="h-6 mx-2 items-center justify-center hidden group-hover:flex"
-        contentEditable={false}
-        data-drag-handle
-      >
-        <AiOutlinePlus className="h-4 w-4 hover:cursor-pointer hover:bg-gray-300" />
-        <RxDragHandleDots2 className="h-4 w-4 hover:cursor-pointer hover:bg-gray-300" />
-      </div>
+      <SideActions editor={editor} getPos={getPos} />
+
       <NodeViewContent className="leading-5 font-bold text-xl w-16/20 text-start mr-10" />
     </NodeViewWrapper>
   );

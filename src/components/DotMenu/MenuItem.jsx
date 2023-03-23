@@ -1,10 +1,18 @@
 import Image from "next/image";
 import React from "react";
-Image;
 
-const SlashMenuItem = ({ suggestion }) => {
+const SlashMenuItem = ({ suggestion, editor, getPos }) => {
+  // add keyboard shortcut handle node selection
+
+  const handleClick = () => {
+    editor.chain().setNodeSelection(getPos()).run();
+    editor.chain().keyboardShortcut(suggestion.shortcut).run();
+  };
   return (
-    <div className="w-full h-[46px] flex item-start justify-start my-2">
+    <div
+      className="w-full h-[46px] flex item-start justify-start my-2 hover:cursor-pointer"
+      onClick={handleClick}
+    >
       <Image
         src={`/../public/assets/${suggestion.title.toLowerCase()}.png`}
         alt={suggestion.title}

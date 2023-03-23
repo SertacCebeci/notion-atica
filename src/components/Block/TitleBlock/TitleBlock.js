@@ -7,7 +7,6 @@ export default Node.create({
   name: "titleBlock",
   group: "block",
   content: "inline*",
-
   parseHTML() {
     return [
       {
@@ -24,7 +23,7 @@ export default Node.create({
         const { $from, empty } = selection;
         if ($from.parent.type == this.type) {
           const titles = editor.view.docView.children.filter((block) => {
-            return block.node.type.name == "titleBlock";
+            console.log(block);
           });
           return true;
         }
