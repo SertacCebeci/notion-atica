@@ -1,8 +1,8 @@
 <!-- markdownlint-disable -->
 # Todo List
+# DOCUMENT CONTEXTİ DUZENLEMEN LAZIM
 
-
-- [ ] Selected menu change color
+- [x] Selected menu change color
 
 - [ ] Slash commands and on slash input dot menu open. Query usecontext
 

@@ -28,20 +28,10 @@ const Component = (props) => {
     return props.editor.state.doc.content.content;
   };
 
-  getAvailableBlocks();
   const changeFormulaExpression = (expression) => {
-    const result = evalFormulaExpression(expression);
     props.updateAttributes({
       formulaExpression: expression,
-      formulaResult: result,
     });
-  };
-
-  const evalFormulaExpression = (expression) => {
-    if (expression === "irem") {
-      return "iremvalid";
-    }
-    return "Invalid";
   };
 
   return (
@@ -55,6 +45,8 @@ const Component = (props) => {
           <Tippy
             placement="bottom-start"
             interactive={true}
+            maxWidth={500}
+            duration={[10, 10]}
             content={
               <Downbar
                 formulaAttrs={props.node.attrs}

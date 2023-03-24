@@ -19,6 +19,9 @@ export default Node.create({
       formulaResult: {
         default: "",
       },
+      formulaTranspile: {
+        default: () => {},
+      },
     };
   },
 
