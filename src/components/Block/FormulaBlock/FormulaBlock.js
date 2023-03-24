@@ -6,7 +6,6 @@ export default Node.create({
   name: "formulaBlock",
   group: "block",
   content: "inline*",
-  editable: false,
   draggable: true,
 
   addAttributes() {

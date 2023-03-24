@@ -60,6 +60,7 @@ const Component = (props) => {
                 formulaAttrs={props.node.attrs}
                 changeFormulaName={changeFormulaName}
                 changeFormulaExpression={changeFormulaExpression}
+                getAvailableBlocks={getAvailableBlocks}
               />
             }
             showOnCreate={true}

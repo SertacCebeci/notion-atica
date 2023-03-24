@@ -1,5 +1,7 @@
 import React from "react";
 import { BubbleMenu } from "@tiptap/react";
+import { BsTypeBold, BsTypeItalic, BsTypeUnderline } from "react-icons/bs";
+import TextColorMenu from "./TextColorMenu/TextColorMenu";
 
 const SelectionMenu = ({ editor }) => {
   const showOnParagraph = () => {
@@ -28,7 +30,7 @@ const SelectionMenu = ({ editor }) => {
             }}
             className="bg-white m-1 p-1 font-bold hover:cursor-pointer hover:bg-gray-200"
           >
-            Bold
+            <BsTypeBold />
           </button>
           <button
             onClick={() => {
@@ -40,7 +42,7 @@ const SelectionMenu = ({ editor }) => {
             }}
             className="bg-white m-1 p-1 italic hover:cursor-pointer hover:bg-gray-200"
           >
-            Italic
+            <BsTypeItalic />
           </button>
           <button
             onClick={() => {
@@ -52,8 +54,9 @@ const SelectionMenu = ({ editor }) => {
             }}
             className="bg-white m-1 p-1 underline hover:cursor-pointer hover:bg-gray-200"
           >
-            Underline
+            <BsTypeUnderline />
           </button>
+          <TextColorMenu editor={editor} />
         </BubbleMenu>
       )}
     </div>

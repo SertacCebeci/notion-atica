@@ -6,6 +6,28 @@
   @apply outline-none;
 }
 
-.block-h1 {
-  @apply leading-5 font-bold text-2xl;
+/* background color */
+
+[block-background-color="gray"] {
+  @apply bg-gray-400;
+}
+
+[block-background-color="red"] {
+  @apply bg-red-600;
+}
+
+[block-background-color="yellow"] {
+  @apply bg-yellow-300;
+}
+
+[block-background-color="green"] {
+  @apply bg-green-400;
+}
+
+[block-background-color="blue"] {
+  @apply bg-blue-400;
+}
+
+[block-background-color="purple"] {
+  @apply bg-purple-400;
 }
