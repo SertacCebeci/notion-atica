@@ -1,35 +1,88 @@
-//latrer replace with valid uuids
 const example = {
-  id: "document-id",
-  title: "My Example Document",
-  blocks: ["block1", "block2", "block3", "block4", "block5"],
-  blockHash: {
-    block1: {
-      id: "block1",
-      type: "h1",
-      content: "Welcome to My Document",
+  type: "doc",
+  content: [
+    {
+      type: "titleBlock",
+      content: [
+        {
+          type: "text",
+          text: "My Example Document",
+        },
+      ],
     },
-    block2: {
-      id: "block2",
-      type: "paragraph",
-      content: "This is an introductory paragraph with some basic information.",
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "8910e",
+      },
+      content: [
+        {
+          type: "text",
+          text: "test",
+        },
+      ],
     },
-    block3: {
-      id: "block3",
-      type: "h2",
-      content: "Section 1",
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "3a38b",
+      },
+      content: [
+        {
+          type: "text",
+          text: "test",
+        },
+      ],
     },
-    block4: {
-      id: "block4",
-      type: "paragraph",
-      content: "Here is the first section of my document.",
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "05925",
+      },
+      content: [
+        {
+          type: "text",
+          text: "test",
+        },
+      ],
     },
-    block5: {
-      id: "block5",
-      type: "formula",
-      content: "SUM(5, 10, 15)",
+    {
+      type: "heading1Block",
+      attrs: {
+        block_id: "e46a1",
+      },
+      content: [
+        {
+          type: "text",
+          text: "test",
+        },
+      ],
     },
-  },
+    {
+      type: "heading2Block",
+      attrs: {
+        block_id: "1ecc7",
+      },
+      content: [
+        {
+          type: "text",
+          text: "test",
+        },
+      ],
+    },
+    {
+      type: "heading3Block",
+      attrs: {
+        block_id: "f5d55",
+      },
+      content: [
+        {
+          type: "text",
+          text: "test",
+        },
+      ],
+    },
+  ],
 };
 
 export default example;

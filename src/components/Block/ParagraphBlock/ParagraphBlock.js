@@ -45,7 +45,7 @@ export default Node.create({
         this.editor.chain().focus().setNode("paragraphBlock").run(),
       //just used for testing
       "Mod-Alt-l": () => {
-        console.log(this.editor.state.doc.content.content);
+        console.log(this.editor.getJSON());
       },
     };
   },

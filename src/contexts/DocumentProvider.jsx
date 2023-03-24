@@ -1,11 +1,10 @@
-import React, { useState, useReducer } from "react";
-import Document from "@/models/Document";
+import React, { useState, createContext } from "react";
 import example from "@/examples/example";
-import DocumentContext from "./DocumentContext";
-// change this to use Reducer and respected functions using the Document Model
+
+export const DocumentContext = createContext(example);
 
 export const DocumentProvider = ({ children }) => {
-  const [document, setDocument] = useState(Document.getInstance(example));
+  const [document, setDocument] = useState(example);
   return (
     <DocumentContext.Provider value={[document, setDocument]}>
       {children}

@@ -1,5 +1,7 @@
-import React, { useContext } from "react";
+import React, { useContext, useMemo } from "react";
 import { EditorContent, useEditor } from "@tiptap/react";
+//you gotta use tiptap/html while server-side rendering which you cannot download via npm because it is a pro feature so... just copy it
+import { generateHTML } from "./Extensions/html";
 //generic tiptap extensions
 import Document from "@tiptap/extension-document";
 import Text from "@tiptap/extension-text";
@@ -13,7 +15,7 @@ import TextStyle from "@tiptap/extension-text-style";
 import Color from "@tiptap/extension-color";
 
 //document context for state management
-import DocumentContext from "@/contexts/DocumentContext";
+import { DocumentContext } from "@/contexts/DocumentProvider";
 
 //custom nodes
 import TitleBlock from "./Block/TitleBlock/TitleBlock";
@@ -27,6 +29,7 @@ import SelectionMenu from "./SelectionMenu/SelectionMenu";
 
 const PageEditor = () => {
   const [document, setDocument] = useContext(DocumentContext);
+
   const editor = useEditor({
     extensions: [
       Document,
@@ -48,18 +51,27 @@ const PageEditor = () => {
       FormulaBlock,
     ],
     injectCSS: false,
-    content: `
-    <title-block>${document.title}</title-block>
-    <paragraph-block>test</paragraph-block>
-    <paragraph-block>test</paragraph-block>
-    <paragraph-block>test</paragraph-block>
-    <heading-1-block>test</heading-1-block>
-    <heading-2-block>test</heading-2-block>
-    <heading-3-block>test</heading-3-block>
-    `,
+    content: generateHTML(document, [
+      Document,
+      Text,
+      Dropcursor,
+      Gapcursor,
+      History,
+      Bold,
+      Italic,
+      Underline,
+      TextStyle,
+      Color,
+      TitleBlock,
+      UniqueID,
+      ParagraphBlock,
+      Heading1Block,
+      Heading2Block,
+      Heading3Block,
+      FormulaBlock,
+    ]),
     onUpdate: ({ editor }) => {
-      document.title = editor.view.nodeDOM(0).textContent;
-      setDocument(JSON.parse(JSON.stringify(document)));
+      setDocument(editor.getJSON());
     },
   });
 
@@ -72,3 +84,17 @@ const PageEditor = () => {
 };
 
 export default PageEditor;
+
+/* 
+`
+    <title-block>${document.title}</title-block>
+    <paragraph-block>test</paragraph-block>
+    <paragraph-block>test</paragraph-block>
+    <paragraph-block>test</paragraph-block>
+    <heading-1-block>test</heading-1-block>
+    <heading-2-block>test</heading-2-block>
+    <heading-3-block>test</heading-3-block>
+    `,
+
+
+*/

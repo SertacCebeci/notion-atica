@@ -1,10 +1,18 @@
-import React, { useContext } from "react";
+import React, { useContext, useCallback } from "react";
 import { FaGreaterThan } from "react-icons/fa";
-import DocumentContext from "@/contexts/DocumentContext";
+import { DocumentContext } from "@/contexts/DocumentProvider";
 import Image from "next/image";
 
 const Navbar = () => {
   const [document, setDocument] = useContext(DocumentContext);
+
+  const findTitleBlockText = () => {
+    const title = document.content.filter((block) => {
+      return block.type === "titleBlock";
+    })[0];
+
+    return title.content[0].text;
+  };
 
   return (
     <div className="w-full h-16 shadow-xl flex justify-between items-center px-2">
@@ -18,7 +26,7 @@ const Navbar = () => {
           <FaGreaterThan />
         </div>
         <div className="w-36 truncate mr-2 text-sm font-bold">
-          {document.title}
+          {findTitleBlockText()}
         </div>
       </div>
     </div>
