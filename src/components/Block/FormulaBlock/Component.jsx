@@ -59,6 +59,7 @@ const Component = (props) => {
             trigger="click"
           >
             <FormulaContent
+              class="w-full"
               formulaExpression={props.node.attrs.formulaExpression}
             />
           </Tippy>
