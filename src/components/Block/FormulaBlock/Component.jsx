@@ -3,6 +3,7 @@ import React, { forwardRef } from "react";
 import SideActions from "@/components/BlockSideActions/SideActions";
 import Downbar from "./Downbar";
 import Tippy from "@tippyjs/react";
+import EvaluateExpression from "./EvaluateExpression";
 
 const FormulaContent = forwardRef(function content(props, ref) {
   return (
@@ -11,7 +12,7 @@ const FormulaContent = forwardRef(function content(props, ref) {
       className="flex item-center justify-start hover:cursor-pointer"
     >
       <div className="rounded text-start text-lg mr-2 px-1 hover:bg-gray-100">
-        {props.formulaResult ? props.formulaResult : "Invalid"}
+        <EvaluateExpression expression={props.formulaExpression} />
       </div>
     </div>
   );
@@ -58,7 +59,9 @@ const Component = (props) => {
             showOnCreate={true}
             trigger="click"
           >
-            <FormulaContent formulaResult={props.node.attrs.formulaResult} />
+            <FormulaContent
+              formulaExpression={props.node.attrs.formulaExpression}
+            />
           </Tippy>
         </div>
         <NodeViewContent className="w-full text-start" />

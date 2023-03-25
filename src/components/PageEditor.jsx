@@ -29,6 +29,8 @@ import SelectionMenu from "./SelectionMenu/SelectionMenu";
 import slashCommands from "./Extensions/SlashCommand/slashCommands";
 import suggestion from "./Extensions/SlashCommand/suggestion";
 
+import EvaluateExpression from "./Block/FormulaBlock/EvaluateExpression";
+
 const PageEditor = () => {
   const [document, setDocument] = useContext(DocumentContext);
 
@@ -83,6 +85,7 @@ const PageEditor = () => {
   return (
     <div className="flex flex-col items-center justify-start w-full h-full">
       <SelectionMenu editor={editor} />
+      <EvaluateExpression expression={"getBlockContent('3a22k')"} />
       <EditorContent className="w-full h-full" editor={editor} />
     </div>
   );

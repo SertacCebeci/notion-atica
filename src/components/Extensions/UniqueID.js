@@ -41,7 +41,7 @@ const UniqueID = Extension.create({
   addOptions() {
     return {
       attributeName: "block_id",
-      types: NodeTypes,
+      types: [...NodeTypes, "titleBlock"],
       generateID: () => nanoid(5),
     };
   },

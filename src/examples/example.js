@@ -3,6 +3,9 @@ const example = {
   content: [
     {
       type: "titleBlock",
+      attrs: {
+        block_id: "3a22k",
+      },
       content: [
         {
           type: "text",

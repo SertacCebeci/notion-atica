@@ -28,7 +28,8 @@ const Downbar = ({
 
   const blockDoubleClick = (block) => {
     changeFormulaExpression(
-      formulaAttrs.formulaExpression + `getBlock(${block.attrs.block_id})`
+      formulaAttrs.formulaExpression +
+        `getBlockContent('${block.attrs.block_id}')`
     );
   };
 

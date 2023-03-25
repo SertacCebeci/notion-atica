@@ -16,12 +16,6 @@ export default Node.create({
       formulaExpression: {
         default: "",
       },
-      formulaResult: {
-        default: "",
-      },
-      formulaTranspile: {
-        default: () => {},
-      },
     };
   },
 
