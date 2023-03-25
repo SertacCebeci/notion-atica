@@ -19,6 +19,7 @@ import { DocumentContext } from "@/contexts/DocumentProvider";
 
 //custom nodes
 import TitleBlock from "./Block/TitleBlock/TitleBlock";
+import Placeholder from "@tiptap/extension-placeholder";
 import UniqueID from "./Extensions/UniqueID";
 import ParagraphBlock from "./Block/ParagraphBlock/ParagraphBlock";
 import Heading1Block from "./Block/Heading1Block/Heading1Block";
@@ -55,6 +56,13 @@ const PageEditor = () => {
       FormulaBlock,
       slashCommands.configure({
         suggestion,
+      }),
+      Placeholder.configure({
+        placeholder: ({ node }) => {
+          if (node.type.name === "titleBlock") {
+            return "Untitled";
+          }
+        },
       }),
     ],
     injectCSS: false,

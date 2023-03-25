@@ -40,7 +40,7 @@ const Downbar = ({
   };
 
   return (
-    <div className="flex flex-col items-center justify-start h-full w-[400px] border border-black">
+    <div className="bg-white flex flex-col items-center justify-start h-full w-[400px] border border-black">
       <div className="flex flex-col items-center justify-start w-full ">
         <input
           className="mt-4 pl-2 border text-sm w-18/20 font border-black text-start hover:cursor-text outline-none"

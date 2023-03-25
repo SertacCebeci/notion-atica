@@ -11,7 +11,10 @@ const Navbar = () => {
       return block.type === "titleBlock";
     })[0];
 
-    return title.content[0].text;
+    if (!Array.isArray(title?.content)) {
+      return "Untitled";
+    }
+    return title.content[0]?.text;
   };
 
   return (

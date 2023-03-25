@@ -56,7 +56,6 @@ const Component = (props) => {
                 getAvailableBlocks={getAvailableBlocks}
               />
             }
-            showOnCreate={true}
             trigger="click"
           >
             <FormulaContent
