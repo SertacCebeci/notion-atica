@@ -1,6 +1,5 @@
 <!-- markdownlint-disable -->
 # Todo List
-# DOCUMENT CONTEXTİ DUZENLEMEN LAZIM
 
 - [x] Selected menu change color
 
@@ -26,8 +25,8 @@
 
 - [ ] Queryblock add run behavior and table with pagination
 
-- [ ] Cumartesi buluşma ertele, pazartesi yap
+- [x] Cumartesi buluşma ertele, pazartesi yap
 
 - [ ] Vercel demo
 
-- [ ] Document context update
+- [x] Document context update

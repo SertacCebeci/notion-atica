@@ -31,3 +31,7 @@
 [block-background-color="purple"] {
   @apply bg-purple-400;
 }
+
+.mention {
+  @apply bg-slate-600;
+}

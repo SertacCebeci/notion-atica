@@ -5,7 +5,7 @@ import {
   findChildrenInRange,
   getChangedRanges,
 } from "@tiptap/core";
-import BlockTypes from "../BlockTypes";
+import { BlockTypes } from "../BlockTypes";
 import { Fragment, Slice } from "prosemirror-model";
 import { Plugin, PluginKey } from "prosemirror-state";
 import { customAlphabet } from "nanoid";

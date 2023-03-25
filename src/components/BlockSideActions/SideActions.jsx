@@ -1,6 +1,5 @@
 import React from "react";
 import DotSideAction from "./DotSideAction";
-import PlusSideAction from "./PlusSideAction";
 
 const SideActions = ({ editor, getPos }) => {
   return (
@@ -9,7 +8,6 @@ const SideActions = ({ editor, getPos }) => {
       contentEditable={false}
       data-drag-handle
     >
-      <PlusSideAction />
       <DotSideAction editor={editor} getPos={getPos} />
     </div>
   );

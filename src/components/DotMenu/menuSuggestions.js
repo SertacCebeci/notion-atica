@@ -1,4 +1,4 @@
-import BlockTypes from "../BlockTypes";
+import { BlockTypes } from "../BlockTypes";
 
 const menuSuggestions = {
   items: ({ query }) => {

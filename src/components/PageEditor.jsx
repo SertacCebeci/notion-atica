@@ -26,6 +26,8 @@ import Heading2Block from "./Block/Heading2Block/Heading2Block";
 import Heading3Block from "./Block/Heading3Block/Heading3Block";
 import FormulaBlock from "./Block/FormulaBlock/FormulaBlock";
 import SelectionMenu from "./SelectionMenu/SelectionMenu";
+import slashCommands from "./Extensions/SlashCommand/slashCommands";
+import suggestion from "./Extensions/SlashCommand/suggestion";
 
 const PageEditor = () => {
   const [document, setDocument] = useContext(DocumentContext);
@@ -49,6 +51,9 @@ const PageEditor = () => {
       Heading2Block,
       Heading3Block,
       FormulaBlock,
+      slashCommands.configure({
+        suggestion,
+      }),
     ],
     injectCSS: false,
     content: generateHTML(document, [

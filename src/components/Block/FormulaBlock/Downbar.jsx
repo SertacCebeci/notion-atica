@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import BlockTypes from "@/components/BlockTypes";
+import { BlockTypes } from "@/components/BlockTypes";
 
 const Downbar = ({
   formulaAttrs,
@@ -75,7 +75,7 @@ const Downbar = ({
             A block on test application
           </div>
           <div className="w-full text-start pl-2 text-sm">
-            type: {BlockTypes[selectedBlock?.type.name]?.title}
+            type: {{ BlockTypes }[selectedBlock?.type.name]?.title}
           </div>
         </div>
       </div>
