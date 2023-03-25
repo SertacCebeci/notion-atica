@@ -85,24 +85,9 @@ const PageEditor = () => {
   return (
     <div className="flex flex-col items-center justify-start w-full h-full">
       <SelectionMenu editor={editor} />
-      <EvaluateExpression expression={"getBlockContent('3a22k')"} />
       <EditorContent className="w-full h-full" editor={editor} />
     </div>
   );
 };
 
 export default PageEditor;
-
-/* 
-`
-    <title-block>${document.title}</title-block>
-    <paragraph-block>test</paragraph-block>
-    <paragraph-block>test</paragraph-block>
-    <paragraph-block>test</paragraph-block>
-    <heading-1-block>test</heading-1-block>
-    <heading-2-block>test</heading-2-block>
-    <heading-3-block>test</heading-3-block>
-    `,
-
-
-*/

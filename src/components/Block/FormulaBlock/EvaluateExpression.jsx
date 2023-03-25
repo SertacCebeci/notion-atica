@@ -4,19 +4,17 @@ import { DocumentContext } from "@/contexts/DocumentProvider";
 
 const EvaluateExpression = ({ expression }) => {
   const [document, setDocument] = useContext(DocumentContext);
-  const getTitleText = () => {
-    const title = document.content.filter((block) => {
-      return block.type === "titleBlock";
-    })[0];
-
-    return title.content[0].text;
-  };
 
   const getBlockContent = (blockID) => {
     const block = document.content.find((block) => {
       return block?.attrs?.block_id === blockID;
     });
-    return block.content[0].text;
+    const content = block.content[0].text;
+    if (isNaN(content * 1)) {
+      return content;
+    } else {
+      return content * 1;
+    }
   };
 
   const sum = (...args) => args.reduce((acc, curr) => acc + curr, 0);
@@ -32,6 +30,9 @@ const EvaluateExpression = ({ expression }) => {
     let result = "Invalid";
     try {
       result = eval(expr);
+      if (typeof result !== "string" && typeof result !== "number") {
+        result = "Invalid";
+      }
     } catch (error) {
       result = "Invalid";
     }
