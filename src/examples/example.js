@@ -72,7 +72,7 @@ const example = {
       content: [
         {
           type: "text",
-          text: " This formula block taking the values of following two blocks as number",
+          text: "This formula block taking the values of following two blocks as number",
         },
       ],
     },
@@ -118,7 +118,7 @@ const example = {
             {
               type: "textStyle",
               attrs: {
-                color: "#0b6e99",
+                color: "rgb(11, 110, 153)",
               },
             },
           ],
@@ -130,7 +130,7 @@ const example = {
             {
               type: "textStyle",
               attrs: {
-                color: "#4d6461",
+                color: "rgb(77, 100, 97)",
               },
             },
           ],
@@ -142,7 +142,7 @@ const example = {
             {
               type: "textStyle",
               attrs: {
-                color: "#6940a5",
+                color: "rgb(105, 64, 165)",
               },
             },
           ],
@@ -157,7 +157,7 @@ const example = {
             {
               type: "textStyle",
               attrs: {
-                color: "#000000",
+                color: "rgb(0, 0, 0)",
               },
             },
           ],
@@ -169,7 +169,7 @@ const example = {
             {
               type: "textStyle",
               attrs: {
-                color: "#9b9a97",
+                color: "rgb(155, 154, 151)",
               },
             },
           ],
@@ -184,7 +184,7 @@ const example = {
             {
               type: "textStyle",
               attrs: {
-                color: "#dfab01",
+                color: "rgb(223, 171, 1)",
               },
             },
           ],
@@ -196,7 +196,7 @@ const example = {
             {
               type: "textStyle",
               attrs: {
-                color: "#9b9a97",
+                color: "rgb(155, 154, 151)",
               },
             },
           ],
@@ -211,7 +211,7 @@ const example = {
             {
               type: "textStyle",
               attrs: {
-                color: "#e03e3e",
+                color: "rgb(224, 62, 62)",
               },
             },
           ],
@@ -227,7 +227,7 @@ const example = {
       content: [
         {
           type: "text",
-          text: "complete the  / for changing this block in to desired block type ",
+          text: "complete the / for changing this block in to desired block type",
         },
       ],
     },
@@ -252,6 +252,41 @@ const example = {
         {
           type: "text",
           text: "Also try clicking the dots icon",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "cdc92",
+      },
+      content: [
+        {
+          type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+          ],
+          text: "Made by ",
+        },
+        {
+          type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+            {
+              type: "italic",
+            },
+            {
+              type: "textStyle",
+              attrs: {
+                color: "#e03e3e",
+              },
+            },
+          ],
+          text: "Ali Sertaç Cebeci",
         },
       ],
     },
