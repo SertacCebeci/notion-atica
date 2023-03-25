@@ -54,11 +54,13 @@ const CommandsList = forwardRef((props, ref) => {
   }));
 
   return (
-    <div className="items">
+    <div className="flex flex-col bg-white border border-black w-24">
       {props.items.length ? (
         props.items.map((item, index) => (
           <button
-            className={`item ${index === selectedIndex ? "is-selected" : ""}`}
+            className={`bg-white m-1 p-1 border-t text-sm ${
+              index === selectedIndex ? "is-selected" : ""
+            }`}
             key={index}
             onClick={() => selectItem(index)}
           >

@@ -3,7 +3,7 @@
 
 - [x] Selected menu change color
 
-- [ ] Slash commands and on slash input dot menu open. Query usecontext
+- [x] Slash commands and on slash input dot menu open. Query usecontext
 
 - [ ] Plus menu and functionality
 
