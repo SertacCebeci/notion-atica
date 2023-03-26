@@ -1,6 +1,7 @@
 import { Menu } from "@mantine/core";
 import { ColorPicker } from "@/components/SelectionMenu/TextColorMenu/ColorPicker";
-
+//tried using a component package just for experiment.
+//I dont think using any is neccesary. I am in favor of web components usage in this project to begin with
 const TextColorMenu = ({ editor }) => {
   return (
     <Menu position="top" offset={8}>
