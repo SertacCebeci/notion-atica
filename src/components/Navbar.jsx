@@ -20,12 +20,7 @@ const Navbar = () => {
   return (
     <div className="w-full h-16 shadow-xl flex justify-between items-center px-2">
       <div className="flex items-center text-xl font-bold mx-8">
-        <Image
-          src="/../public/static/images/synnada.png"
-          alt="logo"
-          width={30}
-          height={45}
-        />
+        <Image src="/synnada.png" alt="logo" width={30} height={45} />
         <span className="ml-1">Notionatica</span>
       </div>
       <div className="flex justify-end items-center px-2 mx-10 ">
