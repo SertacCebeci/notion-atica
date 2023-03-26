@@ -14,7 +14,7 @@ const SlashMenuItem = ({ suggestion, editor, getPos }) => {
       onClick={handleClick}
     >
       <Image
-        src={`/../public/SideActions/${suggestion.image.toLowerCase()}.png`}
+        src={`/../public/static/images/${suggestion.image.toLowerCase()}.png`}
         alt={suggestion.title}
         className="border border-black mr-2 self-start"
         width={46}
