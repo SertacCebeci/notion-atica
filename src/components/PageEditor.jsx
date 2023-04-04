@@ -29,6 +29,7 @@ import FormulaBlock from "./Block/FormulaBlock/FormulaBlock";
 import SelectionMenu from "./SelectionMenu/SelectionMenu";
 import slashCommands from "./Extensions/SlashCommand/slashCommands";
 import suggestion from "./Extensions/SlashCommand/suggestion";
+import Paper from "./Block/SvgBlock/Paper";
 
 import EvaluateExpression from "./Block/FormulaBlock/EvaluateExpression";
 
@@ -64,6 +65,7 @@ const PageEditor = () => {
           }
         },
       }),
+      Paper,
     ],
     injectCSS: false,
     content: generateHTML(document, [
@@ -84,6 +86,7 @@ const PageEditor = () => {
       Heading2Block,
       Heading3Block,
       FormulaBlock,
+      Paper,
     ]),
     onUpdate: ({ editor }) => {
       setDocument(editor.getJSON());
