@@ -21,7 +21,7 @@ const example = {
       content: [
         {
           type: "text",
-          text: "This is H1 block",
+          text: "This is the H1 block",
         },
       ],
     },
@@ -33,7 +33,7 @@ const example = {
       content: [
         {
           type: "text",
-          text: "This is H2 block",
+          text: "This is the H2 block",
         },
       ],
     },
@@ -45,7 +45,7 @@ const example = {
       content: [
         {
           type: "text",
-          text: "This is H3 block",
+          text: "This is the H3 block",
         },
       ],
     },
@@ -72,7 +72,7 @@ const example = {
       content: [
         {
           type: "text",
-          text: "This formula block taking the values of following two blocks as number",
+          text: "This formula block takes the values of the following two blocks as a number",
         },
       ],
     },
@@ -239,7 +239,7 @@ const example = {
       content: [
         {
           type: "text",
-          text: "You know you can order blocks by dragging them with dots icon on the side",
+          text: "You know you can order blocks by dragging them with the dots icon on the side",
         },
       ],
     },
@@ -251,7 +251,7 @@ const example = {
       content: [
         {
           type: "text",
-          text: "Also try clicking the dots icon",
+          text: "Also, try clicking the dots icon",
         },
       ],
     },
@@ -282,13 +282,19 @@ const example = {
             {
               type: "textStyle",
               attrs: {
-                color: "#e03e3e",
+                color: "rgb(224, 62, 62)",
               },
             },
           ],
           text: "Ali Sertaç Cebeci",
         },
       ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "b6840",
+      },
     },
   ],
 };

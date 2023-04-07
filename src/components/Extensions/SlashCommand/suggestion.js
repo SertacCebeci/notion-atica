@@ -8,7 +8,12 @@ const blocks = BlockTypesArray.map((block) => {
   return {
     title: block.title,
     command: ({ editor, range }) => {
-      editor.chain().focus().deleteRange(range).setNode(block.NodeType).run();
+      editor
+        .chain()
+        .focus()
+        .deleteRange(range)
+        .keyboardShortcut(block.shortcut)
+        .run();
     },
   };
 });

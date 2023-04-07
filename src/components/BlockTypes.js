@@ -44,6 +44,15 @@ export const BlockTypes = {
     shortcut: "Mod-Alt-f",
     blockSection: "interactive",
   },
+  connectedLineBlock: {
+    NodeType: "connectedLineBlock",
+    tag: "connected-line-block",
+    title: "Chart",
+    image: "image",
+    desc: "Add a chart",
+    shortcut: "Mod-Alt-c",
+    blockSection: "interactive",
+  },
 };
 
 export const BlockTypesArray = [
@@ -90,6 +99,15 @@ export const BlockTypesArray = [
     image: "formula",
     desc: "Add a formula",
     shortcut: "Mod-Alt-f",
+    blockSection: "interactive",
+  },
+  {
+    NodeType: "connectedLineBlock",
+    tag: "connected-line-block",
+    title: "Chart",
+    image: "image",
+    desc: "Add a chart",
+    shortcut: "Mod-Alt-c",
     blockSection: "interactive",
   },
 ];

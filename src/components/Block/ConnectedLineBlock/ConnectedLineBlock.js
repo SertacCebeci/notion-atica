@@ -1,13 +1,11 @@
 import { mergeAttributes, Node } from "@tiptap/core";
 import { ReactNodeViewRenderer } from "@tiptap/react";
-
 import Component from "./Component";
 
 export default Node.create({
-  name: "paper",
-
+  name: "connectedLineBlock",
   group: "block",
-
+  draggable: true,
   atom: true,
   selectable: false,
   addAttributes() {
@@ -21,20 +19,26 @@ export default Node.create({
   parseHTML() {
     return [
       {
-        tag: 'div[data-type="paper"]',
+        tag: 'div[data-type="connected-line-block"]',
       },
     ];
   },
 
   addKeyboardShortcuts() {
     return {
-      "Mod-Alt-f": ({ editor }) => {
+      "Mod-Alt-c": ({ editor }) => {
         editor
           .chain()
           .focus()
-          .insertContent({
-            type: this.name,
-          })
+          .deleteCurrentNode()
+          .insertContent([
+            {
+              type: this.name,
+            },
+            {
+              type: "paragraphBlock",
+            },
+          ])
           .run();
       },
       //change it to delete when content empty and backspace clicked
@@ -42,7 +46,10 @@ export default Node.create({
   },
 
   renderHTML({ HTMLAttributes }) {
-    return ["div", mergeAttributes(HTMLAttributes, { "data-type": "paper" })];
+    return [
+      "div",
+      mergeAttributes(HTMLAttributes, { "data-type": "connected-line-block" }),
+    ];
   },
 
   addNodeView() {

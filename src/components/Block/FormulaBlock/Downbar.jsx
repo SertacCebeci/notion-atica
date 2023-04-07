@@ -16,7 +16,6 @@ const Downbar = ({
 
   const handleChangeFormulaName = (e) => {
     changeFormulaName(e.target.value);
-    return;
   };
 
   const handleChangeFormulaExpression = (e) => {
@@ -47,7 +46,7 @@ const Downbar = ({
           type="text"
           defaultValue={formulaAttrs.formulaName}
           placeholder="Add Name"
-          onChange={handleChangeFormulaName}
+          onChange={(event) => handleChangeFormulaName(event)}
         />
         <input
           className="mt-1 pl-2 border text-sm w-18/20 border-black text-start hover:cursor-text outline-none"
@@ -55,7 +54,7 @@ const Downbar = ({
           value={formulaAttrs.formulaExpression}
           placeholder="Add Expression"
           spellCheck={false}
-          onChange={handleChangeFormulaExpression}
+          onChange={(event) => handleChangeFormulaExpression(event)}
         />
       </div>
       <div className="w-full h-full mt-4 flex items-start justify-start">
