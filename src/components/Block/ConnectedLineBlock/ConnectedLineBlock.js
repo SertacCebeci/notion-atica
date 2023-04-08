@@ -35,8 +35,23 @@ export default Node.create({
             {
               type: this.name,
             },
+          ])
+          .run();
+      },
+      //change it to delete when content empty and backspace clicked
+    };
+  },
+
+  addKeyboardShortcuts() {
+    return {
+      "Mod-Alt-c": ({ editor }) => {
+        editor
+          .chain()
+          .focus()
+          .deleteCurrentNode()
+          .insertContent([
             {
-              type: "paragraphBlock",
+              type: this.name,
             },
           ])
           .run();

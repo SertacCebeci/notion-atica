@@ -48,7 +48,7 @@ export const BlockTypes = {
     NodeType: "connectedLineBlock",
     tag: "connected-line-block",
     title: "Chart",
-    image: "image",
+    image: "chart",
     desc: "Add a chart",
     shortcut: "Mod-Alt-c",
     blockSection: "interactive",

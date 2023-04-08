@@ -29,6 +29,7 @@ import FormulaBlock from "./Block/FormulaBlock/FormulaBlock";
 import SelectionMenu from "./SelectionMenu/SelectionMenu";
 import slashCommands from "./Extensions/SlashCommand/slashCommands";
 import suggestion from "./Extensions/SlashCommand/suggestion";
+import ImageBlock from "./Block/ImageBlock/ImageBlock";
 //charts
 import ConnectedLineBlock from "./Block/ConnectedLineBlock/ConnectedLineBlock";
 
@@ -65,6 +66,7 @@ const PageEditor = () => {
         },
       }),
       ConnectedLineBlock,
+      ImageBlock,
     ],
     injectCSS: false,
     content: generateHTML(document, [
@@ -86,6 +88,7 @@ const PageEditor = () => {
       Heading3Block,
       FormulaBlock,
       ConnectedLineBlock,
+      ImageBlock,
     ]),
     onUpdate: ({ editor }) => {
       setDocument(editor.getJSON());

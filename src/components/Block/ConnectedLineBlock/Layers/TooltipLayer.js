@@ -16,7 +16,7 @@ const TooltipLayer = (svgContainer) => {
     Tooltip.style("opacity", 1);
   };
   const mousemove = function (event, d) {
-    Tooltip.html("Exact value: " + d.value)
+    Tooltip.html(d.value)
       .style("left", `${event.layerX + 10}px`)
       .style("top", `${event.layerY}px`);
   };
