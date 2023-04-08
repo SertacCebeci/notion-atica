@@ -409,7 +409,7 @@ const example = {
             {
               type: "textStyle",
               attrs: {
-                color: "#0b6e99",
+                color: "rgb(11, 110, 153)",
               },
             },
           ],
@@ -429,11 +429,11 @@ const example = {
             {
               type: "textStyle",
               attrs: {
-                color: "#0b6e99",
+                color: "rgb(11, 110, 153)",
               },
             },
           ],
-          text: "a. “",
+          text: "a. ",
         },
         {
           type: "text",
@@ -444,11 +444,11 @@ const example = {
             {
               type: "textStyle",
               attrs: {
-                color: "#0b6e99",
+                color: "rgb(11, 110, 153)",
               },
             },
           ],
-          text: "function(getBlockContent(blockID))”",
+          text: "function(getBlockContent(blockID))",
         },
       ],
     },
@@ -464,11 +464,11 @@ const example = {
             {
               type: "textStyle",
               attrs: {
-                color: "#0b6e99",
+                color: "rgb(11, 110, 153)",
               },
             },
           ],
-          text: "b. “",
+          text: "b. ",
         },
         {
           type: "text",
@@ -479,7 +479,7 @@ const example = {
             {
               type: "textStyle",
               attrs: {
-                color: "#0b6e99",
+                color: "rgb(11, 110, 153)",
               },
             },
           ],
@@ -494,7 +494,7 @@ const example = {
             {
               type: "textStyle",
               attrs: {
-                color: "#0b6e99",
+                color: "rgb(11, 110, 153)",
               },
             },
           ],
@@ -509,11 +509,61 @@ const example = {
             {
               type: "textStyle",
               attrs: {
+                color: "rgb(11, 110, 153)",
+              },
+            },
+          ],
+          text: "(getBlockContent(blockID)",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "0929c",
+      },
+      content: [
+        {
+          type: "text",
+          marks: [
+            {
+              type: "italic",
+            },
+            {
+              type: "textStyle",
+              attrs: {
                 color: "#0b6e99",
               },
             },
           ],
-          text: "(getBlockContent(blockID)”",
+          text: "c. 10*2/4 + length(getBlockContent(blockID)",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "c7ba0",
+      },
+      content: [
+        {
+          type: "text",
+          marks: [
+            {
+              type: "italic",
+            },
+            {
+              type: "textStyle",
+              attrs: {
+                color: "#0b6e99",
+              },
+            },
+          ],
+          text: "d. proper(getBlockContent(blockID))",
+        },
+        {
+          type: "text",
+          text: " ",
         },
       ],
     },
@@ -594,6 +644,38 @@ const example = {
       attrs: {
         block_id: "9e3ad",
       },
+      content: [
+        {
+          type: "text",
+          marks: [
+            {
+              type: "italic",
+            },
+          ],
+          text: "P.S: You can double-click any block id on the formula modal for adding ",
+        },
+        {
+          type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+            {
+              type: "italic",
+            },
+          ],
+          text: '"getBlockContent(BlockID)"',
+        },
+        {
+          type: "text",
+          marks: [
+            {
+              type: "italic",
+            },
+          ],
+          text: " to the formula expression ",
+        },
+      ],
     },
     {
       type: "heading2Block",
@@ -699,7 +781,7 @@ const example = {
         },
         {
           type: "text",
-          text: "I tried to add a basic version of the annotation ability. ",
+          text: "I tried to add a basic version of the annotation ability.",
         },
       ],
     },
@@ -716,7 +798,7 @@ const example = {
               type: "bold",
             },
           ],
-          text: "    4.1) ",
+          text: "4.1) ",
         },
         {
           type: "text",
@@ -730,10 +812,6 @@ const example = {
         block_id: "cd242",
       },
       content: [
-        {
-          type: "text",
-          text: "    ",
-        },
         {
           type: "text",
           marks: [
