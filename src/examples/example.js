@@ -333,6 +333,15 @@ const example = {
       content: [
         {
           type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+          ],
+          text: "1) ",
+        },
+        {
+          type: "text",
           text: "Use the ",
         },
         {
@@ -355,19 +364,7 @@ const example = {
         },
         {
           type: "text",
-          text: " command to get the content of other blocks.",
-        },
-      ],
-    },
-    {
-      type: "paragraphBlock",
-      attrs: {
-        block_id: "32416",
-      },
-      content: [
-        {
-          type: "text",
-          text: "Formula block allows you to use ",
+          text: " command to get the content of other blocks. Formula block allows you to use ",
         },
         {
           type: "text",
@@ -405,6 +402,17 @@ const example = {
       content: [
         {
           type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+            {
+              type: "textStyle",
+              attrs: {
+                color: "#0b6e99",
+              },
+            },
+          ],
           text: "Example syntaxes are:",
         },
       ],
@@ -417,13 +425,27 @@ const example = {
       content: [
         {
           type: "text",
-          text: "“",
+          marks: [
+            {
+              type: "textStyle",
+              attrs: {
+                color: "#0b6e99",
+              },
+            },
+          ],
+          text: "a. “",
         },
         {
           type: "text",
           marks: [
             {
               type: "italic",
+            },
+            {
+              type: "textStyle",
+              attrs: {
+                color: "#0b6e99",
+              },
             },
           ],
           text: "function(getBlockContent(blockID))”",
@@ -438,13 +460,27 @@ const example = {
       content: [
         {
           type: "text",
-          text: "“",
+          marks: [
+            {
+              type: "textStyle",
+              attrs: {
+                color: "#0b6e99",
+              },
+            },
+          ],
+          text: "b. “",
         },
         {
           type: "text",
           marks: [
             {
               type: "italic",
+            },
+            {
+              type: "textStyle",
+              attrs: {
+                color: "#0b6e99",
+              },
             },
           ],
           text: "(getBlockContent(blockID)",
@@ -455,6 +491,12 @@ const example = {
             {
               type: "bold",
             },
+            {
+              type: "textStyle",
+              attrs: {
+                color: "#0b6e99",
+              },
+            },
           ],
           text: "operator",
         },
@@ -463,6 +505,12 @@ const example = {
           marks: [
             {
               type: "italic",
+            },
+            {
+              type: "textStyle",
+              attrs: {
+                color: "#0b6e99",
+              },
             },
           ],
           text: "(getBlockContent(blockID)”",
@@ -475,6 +523,15 @@ const example = {
         block_id: "676ff",
       },
       content: [
+        {
+          type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+          ],
+          text: "2) ",
+        },
         {
           type: "text",
           text: "Formula block is designed as an inline-block type therefore you can type text next to it.",
@@ -570,6 +627,15 @@ const example = {
       content: [
         {
           type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+          ],
+          text: "1) ",
+        },
+        {
+          type: "text",
           text: "You can use the button to change the data on the chart.",
         },
       ],
@@ -580,6 +646,15 @@ const example = {
         block_id: "ed7aa",
       },
       content: [
+        {
+          type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+          ],
+          text: "2) ",
+        },
         {
           type: "text",
           text: "You can point your cursor over the data nodes on the chart to see values.",
@@ -594,6 +669,15 @@ const example = {
       content: [
         {
           type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+          ],
+          text: "3) ",
+        },
+        {
+          type: "text",
           text: "You can click the legend items to hide/show the data lines.",
         },
       ],
@@ -606,7 +690,62 @@ const example = {
       content: [
         {
           type: "text",
-          text: "I tried to add a basic version of the annotation ability. You can use the button to hide/show this primitive annotation.",
+          marks: [
+            {
+              type: "bold",
+            },
+          ],
+          text: "4) ",
+        },
+        {
+          type: "text",
+          text: "I tried to add a basic version of the annotation ability. ",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "3553c",
+      },
+      content: [
+        {
+          type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+          ],
+          text: "    4.1) ",
+        },
+        {
+          type: "text",
+          text: "You can use the button to hide/show this primitive annotation.",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "cd242",
+      },
+      content: [
+        {
+          type: "text",
+          text: "    ",
+        },
+        {
+          type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+          ],
+          text: "4.2) ",
+        },
+        {
+          type: "text",
+          text: "You can drag-and-drop the annotation",
         },
       ],
     },
