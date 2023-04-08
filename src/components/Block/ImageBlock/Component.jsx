@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { NodeViewContent, NodeViewWrapper } from "@tiptap/react";
 import { Menu } from "@mantine/core";
 import React, { useState, useRef } from "react";
@@ -11,7 +12,7 @@ const Component = ({ editor, node, getPos, updateAttributes }) => {
     });
   };
   return (
-    <NodeViewWrapper className="w-full h-full flex items-center justify-end group my-4">
+    <NodeViewWrapper className="w-full h-full flex items-start justify-end group my-4">
       <SideActions editor={editor} getPos={getPos} />
       <div className="w-16/20 text-start mr-10">
         <div className="relative">

@@ -16,7 +16,7 @@ const AnnotationTooltip = (svgContainer) => {
     Tooltip.style("opacity", 1);
   };
   const annotationMouseMove = function (event, d) {
-    Tooltip.html("Cross Point")
+    Tooltip.html(d.desc)
       .style("left", `${event.layerX + 10}px`)
       .style("top", `${event.layerY}px`);
   };

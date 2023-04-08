@@ -16,6 +16,14 @@ export default Node.create({
     };
   },
 
+  addAttributes() {
+    return {
+      showAnnotations: {
+        default: true,
+      },
+    };
+  },
+
   parseHTML() {
     return [
       {

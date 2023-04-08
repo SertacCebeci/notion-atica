@@ -53,6 +53,15 @@ export const BlockTypes = {
     shortcut: "Mod-Alt-c",
     blockSection: "interactive",
   },
+  imageBlock: {
+    NodeType: "imageBlock",
+    tag: "image-block",
+    title: "Image",
+    image: "image",
+    desc: "Add an image",
+    shortcut: "Mod-Alt-i",
+    blockSection: "interactive",
+  },
 };
 
 export const BlockTypesArray = [
@@ -108,6 +117,15 @@ export const BlockTypesArray = [
     image: "image",
     desc: "Add a chart",
     shortcut: "Mod-Alt-c",
+    blockSection: "interactive",
+  },
+  {
+    NodeType: "imageBlock",
+    tag: "image-block",
+    title: "Image",
+    image: "image",
+    desc: "Add an image",
+    shortcut: "Mod-Alt-i",
     blockSection: "interactive",
   },
 ];
