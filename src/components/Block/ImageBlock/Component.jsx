@@ -40,7 +40,11 @@ const Component = ({ editor, node, getPos, updateAttributes }) => {
               </div>
             </Menu.Dropdown>
           </Menu>
-          <img src={node.attrs.src} alt={node.attrs.alt} />
+          <img
+            className="border border-black rounded-md"
+            src={node.attrs.src}
+            alt={node.attrs.alt}
+          />
         </div>
       </div>
     </NodeViewWrapper>

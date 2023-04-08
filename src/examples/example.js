@@ -9,7 +9,7 @@ const example = {
       content: [
         {
           type: "text",
-          text: "Notionatica Example",
+          text: "Notion-atica",
         },
       ],
     },
@@ -21,31 +21,49 @@ const example = {
       content: [
         {
           type: "text",
-          text: "This is the H1 block",
+          text: "About the Challenge",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "3fb5a",
+      },
+      content: [
+        {
+          type: "text",
+          text: "As a candidate for the front-end engineer position, I built a single-document notebook with a focus on composability and collaboration. I built various blocks, such as a text block with style options, a heading block with three alternatives, a formula block for contextual computations, an image block, and a chart block with basic interaction options. The rest of the document provides more detailed information about the features.",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "eb3b7",
+      },
+    },
+    {
+      type: "heading1Block",
+      attrs: {
+        block_id: "cda45",
+      },
+      content: [
+        {
+          type: "text",
+          text: "Block & Other Components",
         },
       ],
     },
     {
       type: "heading2Block",
       attrs: {
-        block_id: "dcd63",
+        block_id: "ba156",
       },
       content: [
         {
           type: "text",
-          text: "This is the H2 block",
-        },
-      ],
-    },
-    {
-      type: "heading3Block",
-      attrs: {
-        block_id: "61fde",
-      },
-      content: [
-        {
-          type: "text",
-          text: "This is the H3 block",
+          text: "Side Menu & Composability",
         },
       ],
     },
@@ -57,7 +75,421 @@ const example = {
       content: [
         {
           type: "text",
-          text: "This paragraph block",
+          text: "Each block has a side menu that uses six dots icon. The menu component allows you to open the block menu and reorder via drag-and-drop.",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "ec220",
+      },
+    },
+    {
+      type: "heading2Block",
+      attrs: {
+        block_id: "b234e",
+      },
+      content: [
+        {
+          type: "text",
+          text: "“ / ” Command",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "c7ce3",
+      },
+      content: [
+        {
+          type: "text",
+          text: "The “",
+        },
+        {
+          type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+          ],
+          text: "/",
+        },
+        {
+          type: "text",
+          text: "” is a shortcut for the block menu.",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "465d1",
+      },
+    },
+    {
+      type: "heading2Block",
+      attrs: {
+        block_id: "4eaf1",
+      },
+      content: [
+        {
+          type: "text",
+          text: "Text Block",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "1a92d",
+      },
+      content: [
+        {
+          type: "text",
+          text: "I used Tailwind CSS for the style of the",
+        },
+        {
+          type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+            {
+              type: "textStyle",
+              attrs: {
+                color: "rgb(51, 126, 169)",
+              },
+            },
+          ],
+          text: " ",
+        },
+        {
+          type: "text",
+          text: "text. The text block supports ",
+        },
+        {
+          type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+            {
+              type: "italic",
+            },
+            {
+              type: "textStyle",
+              attrs: {
+                color: "rgb(51, 126, 169)",
+              },
+            },
+          ],
+          text: "colorful,",
+        },
+        {
+          type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+            {
+              type: "italic",
+            },
+          ],
+          text: " ",
+        },
+        {
+          type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+            {
+              type: "italic",
+            },
+            {
+              type: "textStyle",
+              attrs: {
+                color: "rgb(212, 76, 71)",
+              },
+            },
+          ],
+          text: "bold,",
+        },
+        {
+          type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+            {
+              type: "italic",
+            },
+          ],
+          text: " ",
+        },
+        {
+          type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+            {
+              type: "italic",
+            },
+            {
+              type: "textStyle",
+              attrs: {
+                color: "rgb(144, 101, 176)",
+              },
+            },
+          ],
+          text: "and",
+        },
+        {
+          type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+            {
+              type: "italic",
+            },
+          ],
+          text: " ",
+        },
+        {
+          type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+            {
+              type: "italic",
+            },
+            {
+              type: "textStyle",
+              attrs: {
+                color: "rgb(68, 131, 97)",
+              },
+            },
+          ],
+          text: "italic",
+        },
+        {
+          type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+            {
+              type: "italic",
+            },
+          ],
+          text: " ",
+        },
+        {
+          type: "text",
+          text: "style options, you can double-click on any word to try it.",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "14398",
+      },
+    },
+    {
+      type: "heading2Block",
+      attrs: {
+        block_id: "15de5",
+      },
+      content: [
+        {
+          type: "text",
+          text: "Formula Block",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "c01f9",
+      },
+      content: [
+        {
+          type: "text",
+          text: "I built a formula block that can get content from other blocks and make computations.",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "facc8",
+      },
+      content: [
+        {
+          type: "text",
+          text: "Use the ",
+        },
+        {
+          type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+          ],
+          text: "getBlockContent(",
+        },
+        {
+          type: "text",
+          marks: [
+            {
+              type: "italic",
+            },
+          ],
+          text: "blockID)",
+        },
+        {
+          type: "text",
+          text: " command to get the content of other blocks.",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "32416",
+      },
+      content: [
+        {
+          type: "text",
+          text: "Formula block allows you to use ",
+        },
+        {
+          type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+          ],
+          text: "sum, mult, left, right, length, proper, upper, lower ",
+        },
+        {
+          type: "text",
+          text: "functions and",
+        },
+        {
+          type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+          ],
+          text: " operators",
+        },
+        {
+          type: "text",
+          text: ".",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "79f69",
+      },
+      content: [
+        {
+          type: "text",
+          text: "Example syntaxes are:",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "69b23",
+      },
+      content: [
+        {
+          type: "text",
+          text: "“",
+        },
+        {
+          type: "text",
+          marks: [
+            {
+              type: "italic",
+            },
+          ],
+          text: "function(getBlockContent(blockID))”",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "b56d6",
+      },
+      content: [
+        {
+          type: "text",
+          text: "“",
+        },
+        {
+          type: "text",
+          marks: [
+            {
+              type: "italic",
+            },
+          ],
+          text: "(getBlockContent(blockID)",
+        },
+        {
+          type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+          ],
+          text: "operator",
+        },
+        {
+          type: "text",
+          marks: [
+            {
+              type: "italic",
+            },
+          ],
+          text: "(getBlockContent(blockID)”",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "676ff",
+      },
+      content: [
+        {
+          type: "text",
+          text: "Formula block is designed as an inline-block type therefore you can type text next to it.",
+        },
+      ],
+    },
+    {
+      type: "heading3Block",
+      attrs: {
+        block_id: "e4a06",
+      },
+      content: [
+        {
+          type: "text",
+          text: "Formula Block Example",
         },
       ],
     },
@@ -72,7 +504,7 @@ const example = {
       content: [
         {
           type: "text",
-          text: "This formula block takes the values of the following two blocks as a number",
+          text: "This formula block uses the sum function on the following two blocks.",
         },
       ],
     },
@@ -84,7 +516,7 @@ const example = {
       content: [
         {
           type: "text",
-          text: "4",
+          text: "10",
         },
       ],
     },
@@ -103,197 +535,155 @@ const example = {
     {
       type: "paragraphBlock",
       attrs: {
-        block_id: "c6b7d",
+        block_id: "9e3ad",
       },
     },
     {
-      type: "paragraphBlock",
+      type: "heading2Block",
       attrs: {
-        block_id: "273af",
+        block_id: "95a1e",
       },
       content: [
         {
           type: "text",
-          marks: [
-            {
-              type: "textStyle",
-              attrs: {
-                color: "rgb(11, 110, 153)",
-              },
-            },
-          ],
-          text: "This ",
-        },
-        {
-          type: "text",
-          marks: [
-            {
-              type: "textStyle",
-              attrs: {
-                color: "rgb(77, 100, 97)",
-              },
-            },
-          ],
-          text: "is ",
-        },
-        {
-          type: "text",
-          marks: [
-            {
-              type: "textStyle",
-              attrs: {
-                color: "rgb(105, 64, 165)",
-              },
-            },
-          ],
-          text: "a ",
-        },
-        {
-          type: "text",
-          marks: [
-            {
-              type: "bold",
-            },
-            {
-              type: "textStyle",
-              attrs: {
-                color: "rgb(0, 0, 0)",
-              },
-            },
-          ],
-          text: "fancy",
-        },
-        {
-          type: "text",
-          marks: [
-            {
-              type: "textStyle",
-              attrs: {
-                color: "rgb(155, 154, 151)",
-              },
-            },
-          ],
-          text: " ",
-        },
-        {
-          type: "text",
-          marks: [
-            {
-              type: "italic",
-            },
-            {
-              type: "textStyle",
-              attrs: {
-                color: "rgb(223, 171, 1)",
-              },
-            },
-          ],
-          text: "paragraph",
-        },
-        {
-          type: "text",
-          marks: [
-            {
-              type: "textStyle",
-              attrs: {
-                color: "rgb(155, 154, 151)",
-              },
-            },
-          ],
-          text: " ",
-        },
-        {
-          type: "text",
-          marks: [
-            {
-              type: "underline",
-            },
-            {
-              type: "textStyle",
-              attrs: {
-                color: "rgb(224, 62, 62)",
-              },
-            },
-          ],
-          text: "block",
+          text: "Chart Block",
         },
       ],
     },
     {
       type: "paragraphBlock",
       attrs: {
-        block_id: "1888e",
+        block_id: "2cbf8",
       },
       content: [
         {
           type: "text",
-          text: "complete the / for changing this block in to desired block type",
+          text: "After discussing the chart block with Kuter and Mete, I thought that using the d3 library for plotting might be a better choice, considering Synnada's needs. Because even though using the d3 library might require more effort to implement new features, it can offer us a highly customizable structure.",
         },
       ],
     },
     {
       type: "paragraphBlock",
       attrs: {
-        block_id: "c5a60",
+        block_id: "57abd",
       },
       content: [
         {
           type: "text",
-          text: "You know you can order blocks by dragging them with the dots icon on the side",
+          text: "You can use the button to change the data on the chart.",
         },
       ],
     },
     {
       type: "paragraphBlock",
       attrs: {
-        block_id: "0a91c",
+        block_id: "ed7aa",
       },
       content: [
         {
           type: "text",
-          text: "Also, try clicking the dots icon",
+          text: "You can point your cursor over the data nodes on the chart to see values.",
         },
       ],
     },
     {
       type: "paragraphBlock",
       attrs: {
-        block_id: "cdc92",
+        block_id: "42201",
       },
       content: [
         {
           type: "text",
-          marks: [
-            {
-              type: "bold",
-            },
-          ],
-          text: "Made by ",
-        },
-        {
-          type: "text",
-          marks: [
-            {
-              type: "bold",
-            },
-            {
-              type: "italic",
-            },
-            {
-              type: "textStyle",
-              attrs: {
-                color: "rgb(224, 62, 62)",
-              },
-            },
-          ],
-          text: "Ali Sertaç Cebeci",
+          text: "You can click the legend items to hide/show the data lines.",
         },
       ],
     },
     {
       type: "paragraphBlock",
       attrs: {
-        block_id: "b6840",
+        block_id: "112bd",
+      },
+      content: [
+        {
+          type: "text",
+          text: "I tried to add a basic version of the annotation ability. You can use the button to hide/show this primitive annotation.",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "a5a6d",
+      },
+    },
+    {
+      type: "connectedLineBlock",
+      attrs: {
+        block_id: "58256",
+        showAnnotations: "",
+      },
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "d0440",
+      },
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "f76b1",
+      },
+    },
+    {
+      type: "heading2Block",
+      attrs: {
+        block_id: "5af4b",
+      },
+      content: [
+        {
+          type: "text",
+          text: "Image Block",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "fb690",
+      },
+      content: [
+        {
+          type: "text",
+          text: "I built an image block that takes an URL and renders it as a PNG.",
+        },
+      ],
+    },
+    {
+      type: "imageBlock",
+      attrs: {
+        block_id: "f6c39",
+        src: "/sample.png",
+        alt: "image",
+        title: null,
+      },
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "fd2e1",
+      },
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "15d7b",
+      },
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "b891c",
       },
     },
   ],

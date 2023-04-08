@@ -48,7 +48,7 @@ export const ImageBlock = Node.create({
   addAttributes() {
     return {
       src: {
-        default: "https://source.unsplash.com/8xznAGy4HcY/800x400",
+        default: `/sample.png`,
       },
       alt: {
         default: "image",
