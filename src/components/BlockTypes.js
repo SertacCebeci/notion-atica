@@ -35,6 +35,14 @@ export const BlockTypes = {
     shortcut: "Mod-Alt-3",
     blockSection: "basic",
   },
+  codeBlock: {
+    NodeType: "codeBlock",
+    title: "Query",
+    image: "code",
+    desc: "Run query",
+    shortcut: "Mod-Alt-o",
+    blockSection: "interactive",
+  },
   formulaBlock: {
     NodeType: "formulaBlock",
     tag: "formula-block",
@@ -126,6 +134,14 @@ export const BlockTypesArray = [
     image: "image",
     desc: "Add an image",
     shortcut: "Mod-Alt-i",
+    blockSection: "interactive",
+  },
+  {
+    NodeType: "codeBlock",
+    title: "Query",
+    image: "code",
+    desc: "Run query",
+    shortcut: "Mod-Alt-o",
     blockSection: "interactive",
   },
 ];

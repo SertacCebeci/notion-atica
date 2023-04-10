@@ -532,7 +532,7 @@ const example = {
             {
               type: "textStyle",
               attrs: {
-                color: "#0b6e99",
+                color: "rgb(11, 110, 153)",
               },
             },
           ],
@@ -555,15 +555,11 @@ const example = {
             {
               type: "textStyle",
               attrs: {
-                color: "#0b6e99",
+                color: "rgb(11, 110, 153)",
               },
             },
           ],
           text: "d. proper(getBlockContent(blockID))",
-        },
-        {
-          type: "text",
-          text: " ",
         },
       ],
     },
@@ -673,7 +669,7 @@ const example = {
               type: "italic",
             },
           ],
-          text: " to the formula expression ",
+          text: " to the formula expression",
         },
       ],
     },
@@ -892,15 +888,133 @@ const example = {
       },
     },
     {
+      type: "heading2Block",
+      attrs: {
+        block_id: "3477a",
+      },
+      content: [
+        {
+          type: "text",
+          text: "Query Block",
+        },
+      ],
+    },
+    {
       type: "paragraphBlock",
       attrs: {
-        block_id: "15d7b",
+        block_id: "6abda",
+      },
+      content: [
+        {
+          type: "text",
+          text: "I have added the Query Block even though it is not completed. The block supports writing SQL and uses Prisma to run queries in the SQLite database.",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "5b432",
+      },
+      content: [
+        {
+          type: "text",
+          text: "There are several issues to be handled. Those are:",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "8cb69",
+      },
+      content: [
+        {
+          type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+          ],
+          text: "1) ",
+        },
+        {
+          type: "text",
+          text: "SQL Injections: current development method is highly susceptible to SQL Injections",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "3adfa",
+      },
+      content: [
+        {
+          type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+          ],
+          text: "2) ",
+        },
+        {
+          type: "text",
+          text: "Table view: current table is a mess... later on I plan to come up with a better table to show results in",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "c4775",
+      },
+      content: [
+        {
+          type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+          ],
+          text: "3) ",
+        },
+        {
+          type: "text",
+          text: "Wrong query UX: there is no UX implementation that indicates that the query is wrong",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "44192",
+      },
+    },
+    {
+      type: "codeBlock",
+      attrs: {
+        block_id: "dac01",
+        language: null,
+      },
+      content: [
+        {
+          type: "text",
+          text: "SELECT * FROM CONTACT\nORDER BY firstName DESC",
+        },
+      ],
+    },
+    {
+      type: "paragraphBlock",
+      attrs: {
+        block_id: "950de",
       },
     },
     {
       type: "paragraphBlock",
       attrs: {
-        block_id: "b891c",
+        block_id: "bbae4",
       },
     },
   ],

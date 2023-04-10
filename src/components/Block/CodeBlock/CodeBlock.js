@@ -1,8 +1,7 @@
 import { mergeAttributes, Node, textblockTypeInputRule } from "@tiptap/core";
 import { Plugin, PluginKey, TextSelection } from "@tiptap/pm/state";
 import { ReactNodeViewRenderer } from "@tiptap/react";
-
-import Component from "../BlockComponent.jsx";
+import Component from "./Component";
 
 const backtickInputRegex = /^```([a-z]+)?[\s\n]$/;
 const tildeInputRegex = /^~~~([a-z]+)?[\s\n]$/;
@@ -83,7 +82,7 @@ export default Node.create({
   },
   addKeyboardShortcuts() {
     return {
-      "Mod-Alt-c": () => this.editor.commands.toggleCodeBlock(),
+      "Mod-Alt-o": () => this.editor.commands.toggleCodeBlock(),
       Backspace: () => {
         const { empty, $anchor } = this.editor.state.selection;
         const isAtStart = $anchor.pos === 1;
@@ -94,6 +93,11 @@ export default Node.create({
           return this.editor.commands.clearNodes();
         }
         return false;
+      },
+      Tab: ({ editor }) => {
+        const { state } = editor;
+        const { selection } = state;
+        const { $from, empty } = selection;
       },
       Enter: ({ editor }) => {
         if (!this.options.exitOnTripleEnter) {

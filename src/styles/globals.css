@@ -2,10 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Basic editor styles */
+
 .ProseMirror {
   @apply outline-none;
 }
 
+pre {
+  @apply bg-black border rounded-sm text-white p-2;
+}
+
+code {
+  @apply bg-none text-inherit;
+}
+.hljs-comment .hljs-quote {
+  @apply text-[#616161];
+}
+
+.hljs-comment .hljs-quote {
+  @apply text-[#616161];
+}
+
+.hljs-variable,
+.hljs-template-variable,
+.hljs-attribute,
+.hljs-tag,
+.hljs-name,
+.hljs-regexp,
+.hljs-link,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+  @apply text-[#f98181];
+}
+
+.hljs-number,
+.hljs-meta,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params {
+  @apply text-[#fbbc88];
+}
+
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet {
+  @apply text-[#b9f18d];
+}
+
+.hljs-title,
+.hljs-section {
+  @apply text-[#faf594];
+}
+
+.hljs-keyword,
+.hljs-selector-tag {
+  @apply text-[#70cff8];
+}
+
+.hljs-emphasis {
+  @apply italic;
+}
+
+.hljs-strong {
+  @apply font-bold;
+}
 /* background color */
 
 [block-background-color="gray"] {

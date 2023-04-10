@@ -14,6 +14,10 @@ import Underline from "@tiptap/extension-underline";
 import TextStyle from "@tiptap/extension-text-style";
 import Color from "@tiptap/extension-color";
 
+import sql from "highlight.js/lib/languages/sql";
+import { lowlight } from "lowlight";
+lowlight.registerLanguage("sql", sql);
+
 //document context for state management
 import { DocumentContext } from "@/contexts/DocumentProvider";
 
@@ -32,6 +36,7 @@ import suggestion from "./Extensions/SlashCommand/suggestion";
 import ImageBlock from "./Block/ImageBlock/ImageBlock";
 //charts
 import ConnectedLineBlock from "./Block/ConnectedLineBlock/ConnectedLineBlock";
+import { CodeBlockLowlight } from "./Block/CodeBlock/CodeBlockLowlight";
 
 const PageEditor = () => {
   const [document, setDocument] = useContext(DocumentContext);
@@ -67,6 +72,9 @@ const PageEditor = () => {
       }),
       ConnectedLineBlock,
       ImageBlock,
+      CodeBlockLowlight.configure({
+        lowlight,
+      }),
     ],
     injectCSS: false,
     content: generateHTML(document, [
@@ -89,6 +97,9 @@ const PageEditor = () => {
       FormulaBlock,
       ConnectedLineBlock,
       ImageBlock,
+      CodeBlockLowlight.configure({
+        lowlight,
+      }),
     ]),
     onUpdate: ({ editor }) => {
       setDocument(editor.getJSON());
