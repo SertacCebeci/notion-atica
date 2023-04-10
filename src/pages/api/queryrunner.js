@@ -12,7 +12,6 @@ export default async function handler(req, res) {
   }
 
   const contactQueryText = req.body?.query;
-  console.log(contactQueryText);
   const sqls = contactQueryText
     .toString()
     .split("\n")
