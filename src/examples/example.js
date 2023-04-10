@@ -991,6 +991,29 @@ const example = {
       attrs: {
         block_id: "44192",
       },
+      content: [
+        {
+          type: "text",
+          marks: [
+            {
+              type: "bold",
+            },
+          ],
+          text: "4) ",
+        },
+        {
+          type: "text",
+          marks: [
+            {
+              type: "textStyle",
+              attrs: {
+                color: "rgb(0, 0, 0)",
+              },
+            },
+          ],
+          text: "Currently running this is only reserved for the local environment. I will register a cloud database and use PostgreSQL for database management. I personally had a hard time understanding SQLite even though it is promised to be easier. Therefore I will just switch to a full-scale solution instead.",
+        },
+      ],
     },
     {
       type: "codeBlock",
@@ -1001,7 +1024,7 @@ const example = {
       content: [
         {
           type: "text",
-          text: "SELECT * FROM CONTACT\nORDER BY firstName DESC",
+          text: "SELECT * FROM CONTACT",
         },
       ],
     },
